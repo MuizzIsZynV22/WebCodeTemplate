@@ -1,6 +1,6 @@
 <!--membuat sambungan ke db-->
 <?php
-	include('config.php');
+	include('configTemp.php');
 ?>
 
 <!DOCTYPE html>
@@ -46,7 +46,7 @@
 				<td>".$row['empty2']."</td>
 				<td>".$row['date']."</td>
 				<td>".$row['choise']."</td>
-				<td>","<a href=\"padam.php?id=".$row['id']. "\" Onclick=\"return confirm('Rekod ini akan dihapuskan')\">delete</td>
+				<td>","<a href=\"padamTemp.php?id=".$row['id']. "\" Onclick=\"return confirm('Rekod ini akan dihapuskan')\">delete</td>
 
 
 			</tr>
@@ -54,7 +54,7 @@
 		}
 	?>
 	</table>
-	<p><a href="tambah.php"><button name="tambah" type="submit">&#43;TAMBAH</button></a></p>
+	<p><a href="tambahTemp.php"><button name="tambah" type="submit">&#43;TAMBAH</button></a></p>
 	</center>
 	</body>
 </html>
