@@ -17,7 +17,7 @@
 		<h2>Form Table Name</h2>
 
 		<table border="0" cellpadding="5" cellspacing="1" bgcolor="white" style="background-color: #f0ff60; padding: 20px; border-top: 1px solid black; border-left: 2px solid black; border-right: 2px solid #09f085; border-bottom: 1px solid #09f925; border-radius: 10px;">
-			<form action="" method="post">
+			<form action="post" method="post">
 				<tr>
 					<td>
 						Id
@@ -103,18 +103,18 @@
 	</center>
 </body>
 <?php
-	include('config.php');
+	include('configTemp.php');
 	if (isset($_POST['submit'])){
 		//menyemak sama ada butang hantar ditekan
 		$id = $_POST['id'];//mengumpukkan nilai daripada kotak tesk ke dalam pembolehubah $id
-		$name = $_POST['name];
+		$name = $_POST['name'];
 		$empty1 = $_POST['empty1'];
 		$empty2 = $_POST['empty2'];
 		$date = $_POST['date'];
 		$choise = $_POST['choise'];
 
 		$add = mysqli_query($connect, "INSERT INTO table_name values ('$id','$name','$empty1','$empty2','$date','$choise')");
-		header('location:index.php');
+		header('location:indexTemp.php');
 	}//penamat untuk if
 ?>
 </html>
